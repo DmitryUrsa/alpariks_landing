@@ -1,0 +1,97 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.header-section {
+		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 0% 100%);
+	}
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.header-section {
+		height: auto;
+	}
+	.header-section__header {
+		border-bottom: none;
+		font-size: 48px;
+	}
+	.header-section__subhead {
+		font-size: 32px;
+		line-height: 1.5;
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.flex-table {
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__col {
+			width: 100% !important;
+			border: none;
+		}
+	}
+	.logo {
+		&__text {
+			font-size: 50px;
+		}
+		&__letter {
+			font-size: 60px;
+		}
+	}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.header-section__subhead {
+		font-size: 26px;
+		line-height: 1.4;
+	}
+	.header-section__header {
+		font-size: 24px;
+		line-height: 1.5;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-top: 40px;
+	}
+	.logo {
+		&__text {
+			font-size: 40px;
+		}
+		&__letter {
+			font-size: 50px;
+		}
+	}
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
