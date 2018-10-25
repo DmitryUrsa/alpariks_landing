@@ -255,5 +255,38 @@ b, strong {
 	}
 }
 
+.footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.secondary-slider {
+	margin-bottom: 40px;
+	&.secondary-slider_thanks {
+		.secondary-slider__item {
+			height: 420px;
+			width: 380px;
+		}
+	}
+	.secondary-slider__item {
+		width: 280px;
+		height: 280px;
+		overflow: hidden;
+		display: inline-block;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.slick-next {
+		right: -50px;
+	}
+	.slick-prev {
+		left: -50px;
+	}
+}
+
 
 @import "media"; // Always at the end
